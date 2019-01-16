@@ -22,7 +22,7 @@ class Config
     const SITE_PASTA = '';
     const SITE_NOME = 'Site em Desenvolvimento ';
     const SITE_EMAIL_ADM = 'tec.alexnogueira@gmail.com';
-    const BD_LIMIT_POR_PAG = 6;
+    const BD_LIMIT_POR_PAG = 0;
     const SITE_CEP = '31535522';
 
     //INFORMAÇÕES DO BANCO DE DADOS HOSPEDADO
