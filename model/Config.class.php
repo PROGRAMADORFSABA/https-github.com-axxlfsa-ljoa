@@ -5,8 +5,8 @@ class Config
     /*INFORMÃÇÕES BÁSICAS DO SITE
     const SITE_URL = 'http://localhost:8081/lojaphp';
     const SITE_PASTA = 'lojaphp';
-    const SITE_NOME = '';
-    const SITE_EMAIL_ADM = '';
+    const SITE_NOME = 'Loja do Freitas - PHP 7 e Mysqli';
+    const SITE_EMAIL_ADM = 'lojavirtualfreitas@gmail.com';
     const BD_LIMIT_POR_PAG = 6;
     const SITE_CEP = '31535522';*/
 
@@ -22,7 +22,7 @@ class Config
     const SITE_PASTA = '';
     const SITE_NOME = 'Site em Desenvolvimento ';
     const SITE_EMAIL_ADM = 'tec.alexnogueira@gmail.com';
-    const BD_LIMIT_POR_PAG = 0;
+    const BD_LIMIT_POR_PAG = 6;
     const SITE_CEP = '31535522';
 
     //INFORMAÇÕES DO BANCO DE DADOS HOSPEDADO
