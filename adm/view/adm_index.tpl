@@ -199,8 +199,7 @@
             <div class="row" id="rodape">
                 <center>
                     <h4>{$TITULO_SITE}</h4>
-                    <P>Todos os Direitos Reservados - Data Atual: {$DATA}</P>
-                    <a href = "http://www.alexnogueira.tech/"><small>Alex Nogueira</small></a>
+                    <P>Todos os Direitos Reservados -  Data Atual: {$DATA}</P>
                 </center>
             
             </div><!-- fim div rodape-->

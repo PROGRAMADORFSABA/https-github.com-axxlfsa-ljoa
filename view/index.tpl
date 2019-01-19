@@ -170,7 +170,6 @@
                 <center>
                     <h4>{$TITULO_SITE}</h4>
                     <P>Todos os Direitos Reservados - Data Atual: {$DATA}</P>
-                    <a href = "http://www.alexnogueira.tech/"><small>Alex Nogueira</small></a>
                 </center>
             
             </div><!-- fim div rodape-->
