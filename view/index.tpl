@@ -142,8 +142,8 @@
                     
                     
                     <ul class="breadcrumb">
-                        <li><a href="#"><i class="glyphicon glyphicon-home"></i> Home </a></li>
-                        <li><a href="#"> Produtos </a></li>
+                        <li><a href="{$GET_SITE_HOME}"><i class="glyphicon glyphicon-home"></i> Home </a></li>
+                        <li><a href="{$PAG_PRODUTOS}"> Produtos </a></li>
                         <li><a href="{$GET_SITE_HOME}/adm/login.php"> Painél ADM </a></li>
                     </ul>   
                     <!-- fim do menu breadcrumb-->             

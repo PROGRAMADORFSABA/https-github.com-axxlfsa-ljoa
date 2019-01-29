@@ -45,7 +45,7 @@
         
         <div class="col-md-2">
             <label>CPF:</label>
-            <input type="text" value="{$CLI_CPF}" name="cli_cpf" class="form-control" minlength="11" maxlength="11" required readonly>
+            <input type="text" value="{$CLI_CPF}" name="cli_cpf" class="form-control" min="11" max="11" required readonly>
             
             
         </div>
@@ -54,7 +54,7 @@
         
         <div class="col-md-2">
             <label>DDD:</label>
-            <input type="number" value="{$CLI_DDD}" name="cli_ddd" class="form-control"  min="10" max="99" required>
+            <input type="number" value="{$CLI_DDD}" name="cli_ddd" class="form-control"  minlength="2" maxlength="2" required>
             
             
         </div>
@@ -63,7 +63,7 @@
         
         <div class="col-md-3">
             <label>Fone:</label>
-            <input type="number" value="{$CLI_FONE}" name="cli_fone" class="form-control" required>
+            <input class="loading" type="number" value="{$CLI_FONE}" name="cli_fone" class="form-control"  maxlength="8" required limitaInput()>
             
             
         </div>
@@ -72,7 +72,7 @@
         
         <div class="col-md-3">
             <label>Celular:</label>
-            <input type="number" value="{$CLI_CELULAR}" name="cli_celular" class="form-control" required>
+            <input class="loading" type="number" value="{$CLI_CELULAR}" name="cli_celular" class="form-control"  maxlength="8" required limitaInput()>
             
             
         </div>

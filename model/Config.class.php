@@ -27,9 +27,9 @@ class Config
 
     //INFORMAÇÕES DO BANCO DE DADOS HOSPEDADO
     const BD_HOST = 'sql179.main-hosting.eu.';
-    const BD_USER = 'u325780549_silva';
+    const BD_USER = 'u325780549_teste';
     const BD_SENHA = 'Bruna2012*';
-    const BD_BANCO = 'u325780549_loja';
+    const BD_BANCO = 'u325780549_teste';
     const BD_PREFIX = 'u325780549_';
 
     //INFORMAÇÕES PARA PHP MAILLER
@@ -43,8 +43,8 @@ class Config
     const EMAIL_COPIA = 'suporte@alexnogueira.tech';
 
     //CONSTANTES PARA O PAGSEGURO
-    const PS_EMAIL = 'qcursos@hotmail.com'; // email pagseguro
-    const PS_TOKEN = '0E86ADF6373348509E7B35389D92004C'; // token produção
+    const PS_EMAIL = 'silvalov@gmail.com'; // email pagseguro
+    const PS_TOKEN = 'A5482902462F4CF58C23A5E140A39DF6'; // token produção
     const PS_TOKEN_SBX = '1FB4D7860EA9491BA7AB4A9D9336C275';  // token do sandbox
     const PS_AMBIENTE = 'production'; // production   /  sandbox
 }

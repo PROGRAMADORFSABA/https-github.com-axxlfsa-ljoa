@@ -1,30 +1,27 @@
-<?php 
+<?php
 
 
 date_default_timezone_set('America/Sao_Paulo');
 
-if(!isset($_SESSION)){
-	session_start();
-	
+if (!isset($_SESSION)) {
+    session_start();
 }
 
 /*
 if(!isset($_SESSION['PED']['pedido'])){
-	$_SESSION['pedido'] = md5(uniqid(date('YmdHms')));
+    $_SESSION['pedido'] = md5(uniqid(date('YmdHms')));
 }
 
 if(!isset($_SESSION['PED']['ref'])){
-	$_SESSION['ref'] = date('ymdHms');
+    $_SESSION['ref'] = date('ymdHms');
 }
 */
 
 require './lib/autoload.php';
 
-
 $smarty = new Template();
 $categorias = new Categorias();
 $categorias->GetCategorias();
-
 
 //valores para o template
 $smarty->assign('NOME', 'HUGO VASCONCELOS DE FREITAS');
@@ -41,11 +38,8 @@ $smarty->assign('DATA', Sistema::DataAtualBR());
 $smarty->assign('PAG_LOGOFF', Rotas::pag_Logoff());
 $smarty->assign('LOGADO', Login::Logado());
 
-if(Login::Logado()){
-	$smarty->assign('USER', $_SESSION['CLI']['cli_nome']);
-	
+if (Login::Logado()) {
+    $smarty->assign('USER', $_SESSION['CLI']['cli_nome']);
 }
 
-
 $smarty->display('index.tpl');
- ?>
