@@ -37,7 +37,6 @@ class Correios
     private $url = 'http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx';
     private $sedex = '04014';
     private $pac = '04510';
-    // private $frete = '04500';
 
     /**
      * @param string cep destino

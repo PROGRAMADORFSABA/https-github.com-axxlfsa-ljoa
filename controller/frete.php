@@ -4,51 +4,46 @@ require_once '../lib/autoload.php';
 
         //instancio a classe correios
         $destino = $_GET['cepcliente'];
-        $peso    = $_GET['pesofrete'];
+        $peso = $_GET['pesofrete'];
 
-	// chamando a classe Correios
+    // chamando a classe Correios
         $frete = new Correios($destino, $peso);
-	
-	//chamo meu metodo para calcular
-	$calc = $frete->Calcular();
-	
-	//verifica se foi calculado, se sim retorna xml , caso n�o, mostra erros
-	if(!$calc):
-	
-		$error = $frete->error();
-		echo $error[0];
-	
-	else:
-	
-		echo  '<span class="radio text-danger text-left" > ';
-        
-        
-                      
+
+    //chamo meu metodo para calcular
+    $calc = $frete->Calcular();
+
+    //verifica se foi calculado, se sim retorna xml , caso não, mostra erros
+    if (!$calc):
+
+        $error = $frete->error();
+        echo $error[0];
+
+    else:
+
+        echo  '<span class="radio text-danger text-left" > ';
+
                         foreach ($frete->frete as $frete):
 
+                        if ($frete['erro'] != 0):
 
-                        if($frete['erro'] != 0):
-                            
-                         echo $frete['tipo'] . ' - ';
-                         echo $frete['Codigo'] . ' - ';
+                         echo $frete['tipo'].' - ';
+                         echo $frete['Codigo'].' - ';
                          echo $frete['MsgErro'];
                          echo '<br><b> Erro no calculo de frete </b><br>';
 
                         else:
 
-                              echo '<br> <input type="radio"  required id="frete_radio" name="frete_radio" value="'.str_replace(',','.',$frete['valor']).'" > '.$frete['valor'].' : ' .$frete['tipo'].' - Prazo: ' .$frete['Prazo'].' dia(s)</b>';
-
+                              echo '<br> <input type="radio"  required id="frete_radio" name="frete_radio" value="'.str_replace(',', '.', $frete['valor']).'" > '.$frete['valor'].' : '.$frete['tipo'].' - Prazo: '.$frete['Prazo'].' dia(s)</b>';
 
                         endif;
 
                         endforeach;
 
             echo '</span><br>';
-      
-	  endif;
-        
-	
-        /**
+
+      endif;
+
+        /*
 
 40010 SEDEX Varejo
 40045 SEDEX a Cobrar Varejo
@@ -113,7 +108,7 @@ require_once '../lib/autoload.php';
       }
     }
   }
-} 
- 
+}
+
  *  /
  */
